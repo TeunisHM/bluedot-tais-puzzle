@@ -14,6 +14,9 @@ venv/
 .idea/
 .DS_Store
 
+# Source document for README.md (lives in Google Docs)
+*.docx
+
 # --- Puzzle data (fetch from the upstream puzzle repo, see README) ---
 data/
 
