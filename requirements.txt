@@ -1,0 +1,10 @@
+# Core: puzzle model + analysis
+torch>=2.0
+sentence-transformers>=2.2
+numpy
+scikit-learn
+matplotlib
+
+# Notebook only
+jupyterlab
+umap-learn   # BlueDot.ipynb, UMAP view of layer 2

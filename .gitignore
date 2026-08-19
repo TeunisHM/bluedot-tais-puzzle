@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Puzzle data (fetch from the upstream puzzle repo, see README) ---
+data/
+
+# --- Training run clutter ---
+cache/          # sentence-transformer embedding cache (sphere_model.py)
+train_run*.log
+train_v2_run*.log
+
+# Intermediate / superseded checkpoints. Tracked: model.pt (the puzzle's own
+# model) and sphere_model_v2b.pt (the task-3 model the reported results use).
+*.pt
+!model.pt
+!sphere_model_v2b.pt
+
+# Regenerable analysis output: plots and probe-ladder dumps written by
+# analyze_sphere.py / analyze_sphere_v2.py.
+radius_hist*.png
+sphere_code*.png
+final_ladder*.txt
+
+# Superseded notebooks: BlueDot.ipynb is the current analysis and is a
+# superset of both of these.
+BlueDot.backup-*.ipynb
+BlueDot-research.ipynb
